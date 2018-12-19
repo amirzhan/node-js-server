@@ -8,7 +8,7 @@ app.get('/', function(request, response) {
   response.send('Hello World!')
 })
 app.get('/download/appeal', function(req, res) {
-	var file = __dirname + '/static/appplication_appeal.docx'
+	var file = __dirname + '/appplication_appeal.docx'
 	res.download(file)
 })
 app.listen(app.get('port'), function() {
